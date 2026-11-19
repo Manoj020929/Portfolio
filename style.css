@@ -289,3 +289,28 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.2; }
   *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+/* ---------- Extra mobile polish ---------- */
+@media (max-width: 480px) {
+  .container { width: 90%; }
+  .hero { padding-top: calc(var(--nav-h) + 10px); }
+  .hero h1 { font-size: 2.1rem; }
+  .role { font-size: 1.1rem; }
+  .lead { font-size: 0.98rem; }
+  .avatar-ring { width: 230px; }
+  .section { padding: 60px 0; }
+  .section-head { margin-bottom: 36px; }
+  .logo { font-size: 1.15rem; }
+  .timeline { padding-left: 26px; }
+  .timeline-dot { left: -26px; width: 16px; height: 16px; }
+  .timeline img { max-width: 80px; height: auto; }
+  .contact-item { padding: 16px; gap: 14px; }
+  .contact-item strong { font-size: 0.88rem; }
+  .about-card dl > div { flex-direction: column; gap: 2px; }
+  .about-card dd { text-align: left; }
+  .back-top { right: 16px; bottom: 16px; }
+}
+
+@media (max-width: 360px) {
+  .hero h1 { font-size: 1.8rem; }
+  .btn { padding: 12px 20px; }
+}
